@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>{{ title }}</title>
+</head>
+
+<body data-page="{{ page }}">
+{{> header }}
+
+<div class="app-layout">
+    {{> sidebar }}
+
+    <main class="page page--catalog">
+        <h1>Product catalog</h1>
+
+    </main>
+</div>
+
+{{> footer }}
+
+{{> bottom-nav }}
+
+{{> product-modal }}
+
+<script
+        type="module"
+        src="/src/js/pages/catalog.js"
+></script>
+</body>
+</html>
