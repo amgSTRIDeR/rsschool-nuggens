@@ -1,0 +1,5 @@
+@use './palette' as palette;
+
+[data-theme='dark'] {
+  --color-primary: #{palette.$gold-100};
+}

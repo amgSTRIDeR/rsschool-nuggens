@@ -1,5 +1,6 @@
 @use 'modern-normalize/modern-normalize.css';
-@use './variables' as *;
+@use './theme-light';
+@use './theme-dark';
 
 @font-face {
   font-family: 'Inter';

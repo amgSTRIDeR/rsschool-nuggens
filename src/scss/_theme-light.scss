@@ -1,0 +1,6 @@
+@use './palette' as palette;
+
+:root,
+[data-theme='light'] {
+  --color-primary: #{palette.$gold-100};
+}
