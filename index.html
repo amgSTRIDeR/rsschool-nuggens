@@ -1,37 +1,26 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
 
-  <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
-  >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>{{ title }}</title>
-</head>
+    <title>{{ title }}</title>
+  </head>
 
-<body data-page="{{ page }}">
-{{> header }}
+  <body data-page="{{ page }}">
+    {{> header }}
 
-<div class="app-layout">
-  {{> sidebar }}
+    <div class="app-layout">
+      {{> sidebar }}
 
-  <main class="page page--home">
-    <h1 class="visually-hidden">
-      Nuggens
-    </h1>
+      <main class="page page--home">
+        <h1 class="visually-hidden">Nuggens</h1>
+      </main>
+    </div>
 
-  </main>
-</div>
+    {{> footer }} {{> bottom-nav }}
 
-{{> footer }}
-
-{{> bottom-nav }}
-
-<script
-        type="module"
-        src="/src/js/pages/home.js"
-></script>
-</body>
+    <script type="module" src="/src/js/pages/home.js"></script>
+  </body>
 </html>
