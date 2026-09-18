@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 52" fill="none">
+  <!-- top bun outline -->
+  <path d="M10.2 25.4
+           C10.7 15.1 19.3 7.1 30.6 7.1
+           C41.9 7.1 50.5 15.1 51.0 25.4
+           L51.0 27.0
+           H10.2
+           Z"
+        stroke="currentColor" stroke-width="4.1" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- top bun gold center -->
+  <path d="M17.2 23.1
+           C18.5 17.0 23.6 13.4 30.6 13.4
+           C37.6 13.4 42.7 17.0 44.0 23.1
+           H17.2Z"
+        fill="var(--brand-color, #DEBA6F)"/>
+
+  <!-- lower bun outline -->
+  <path d="M10.5 34.8
+           H50.7
+           V38.8
+           C50.7 45.2 46.1 48.5 40.4 48.5
+           H20.8
+           C15.1 48.5 10.5 45.2 10.5 38.8
+           Z"
+        stroke="currentColor" stroke-width="4.1" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- filling / lower gold band -->
+  <path d="M14.0 35.7H47.2
+           C46.6 39.0 43.9 41.0 40.4 41.0
+           H20.8
+           C17.3 41.0 14.6 39.0 14.0 35.7Z"
+        fill="var(--brand-color, #DEBA6F)"/>
+</svg>

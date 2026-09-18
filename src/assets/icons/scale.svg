@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 58" fill="none">
+  <!-- scale body -->
+  <rect x="10.2" y="10.8" width="42.0" height="39.5" rx="7.2" ry="7.2"
+        stroke="currentColor" stroke-width="3.4"/>
+
+  <!-- dial outline -->
+  <path d="M20.7 27.8
+           C20.9 21.0 25.0 17.2 30.9 17.2
+           C36.8 17.2 40.8 21.0 41.0 27.8
+           Z"
+        stroke="currentColor" stroke-width="3.3" stroke-linejoin="round"/>
+
+  <!-- dial gold face -->
+  <path d="M23.8 26.4
+           C24.2 22.0 27.0 19.6 30.9 19.6
+           C34.8 19.6 37.6 22.0 38.0 26.4
+           Z"
+        fill="var(--brand-color, #DEBA6F)"/>
+
+  <!-- gauge pointer -->
+  <path d="M30.9 20.4V24.0" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="30.9" cy="25.4" r="1.7" fill="currentColor"/>
+</svg>

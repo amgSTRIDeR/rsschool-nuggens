@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 59" fill="none">
+  <!-- large outlined sparkle -->
+  <path d="M24.0 10.3
+           C25.3 18.1 29.3 21.8 36.5 24.0
+           C29.3 26.1 25.4 30.5 24.0 39.8
+           C22.6 30.5 18.7 26.1 11.5 24.0
+           C18.7 21.8 22.7 18.1 24.0 10.3 Z"
+        stroke="currentColor" stroke-width="4.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- top right gold sparkle -->
+  <path d="M45.5 9.0
+           C46.2 13.3 48.0 15.0 51.5 15.8
+           C48.0 16.6 46.2 18.3 45.5 22.6
+           C44.8 18.3 43.0 16.6 39.5 15.8
+           C43.0 15.0 44.8 13.3 45.5 9.0 Z"
+        fill="var(--brand-color, #DEBA6F)"/>
+  <!-- bottom right gold sparkle -->
+  <path d="M47.7 33.4
+           C48.4 37.8 50.2 39.5 53.8 40.3
+           C50.2 41.1 48.4 42.9 47.7 47.2
+           C47.0 42.9 45.2 41.1 41.6 40.3
+           C45.2 39.5 47.0 37.8 47.7 33.4 Z"
+        fill="var(--brand-color, #DEBA6F)"/>
+</svg>

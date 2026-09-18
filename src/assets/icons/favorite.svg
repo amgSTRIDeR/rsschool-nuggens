@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 60 54" fill="none">
+  <path d="M30 48.5L27.5 46.1C15.2 34.9 7.5 27.9 7.5 19.3C7.5 12.2 13 7 20.1 7C24.1 7 27.9 8.9 30 12C32.1 8.9 35.9 7 39.9 7C47 7 52.5 12.2 52.5 19.3C52.5 27.9 44.8 34.9 32.5 46.1L30 48.5Z"
+        stroke="currentColor" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(12.3 11.8) scale(0.59)">
+    <path d="M30 48.5L27.5 46.1C15.2 34.9 7.5 27.9 7.5 19.3C7.5 12.2 13 7 20.1 7C24.1 7 27.9 8.9 30 12C32.1 8.9 35.9 7 39.9 7C47 7 52.5 12.2 52.5 19.3C52.5 27.9 44.8 34.9 32.5 46.1L30 48.5Z"
+          fill="var(--brand-color, #DEBA6F)"/>
+  </g>
+</svg>
