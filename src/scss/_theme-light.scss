@@ -2,5 +2,17 @@
 
 :root,
 [data-theme='light'] {
-  --color-primary: #{palette.$gold-100};
+  --color-brand: #{palette.$orange-400};
+  --color-brand-reversed: #{palette.$orange-500};
+  --color-brand-hover: #{palette.$orange-600};
+  --color-background: #{palette.$gray-100};
+  --color-background-reversed: #{palette.$navy-850};
+  --color-text-primary: #{palette.$navy-500};
+  --color-background-header: #{palette.$white};
+  --color-logo: #{palette.$brown-900};
+  --color-disabled: #{palette.$slate-700};
+  --theme-icon-sun-brand: var(--color-brand);
+  --theme-icon-sun: var(--color-text-primary);
+  --theme-icon-moon-brand: var(--color-disabled);
+  --theme-icon-moon: var(--color-disabled);
 }

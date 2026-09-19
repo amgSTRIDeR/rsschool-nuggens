@@ -1,5 +1,16 @@
 @use './palette' as palette;
 
 [data-theme='dark'] {
-  --color-primary: #{palette.$gold-100};
+  --color-brand: #{palette.$orange-500};
+  --color-brand-reversed: #{palette.$orange-400};
+  --color-background: #{palette.$navy-850};
+  --color-background-reversed: #{palette.$gray-100};
+  --color-text-primary: #{palette.$surface-light};
+  --color-background-header: #{palette.$navy-700};
+  --color-logo: #{palette.$gold-250};
+  --color-disabled: #{palette.$slate-700};
+  --theme-icon-sun-brand: var(--color-disabled);
+  --theme-icon-sun: var(--color-disabled);
+  --theme-icon-moon-brand: var(--color-brand);
+  --theme-icon-moon: var(--color-text-primary);
 }
