@@ -1,11 +1,14 @@
 .header__inner{
   height: 68px;
   display: flex;
+  justify-content: space-between;
 
   .header__left,
   .header__right{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 50px;
   }
 
   .menu-button {
@@ -174,6 +177,44 @@
           border-radius: 50%;
         }
       }
+    }
+  }
+
+  .user-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    transition:
+            color 180ms ease;
+
+    &:hover {
+      color: var(--color-brand-hover);
+
+      .user-avatar {
+        border: 2px solid var(--color-brand-hover);
+      }
+    }
+
+    &:active {
+      color: var(--color-brand-reversed);
+
+      .user-avatar {
+        border: 2px solid var(--color-brand-reversed);
+      }
+    }
+
+    .user-avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 2px solid var(--color-user-border);
+      background-color: var(--color-user-background);
+      background-image: url("../../assets/images/tilkayo.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }

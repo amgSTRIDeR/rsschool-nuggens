@@ -15,4 +15,6 @@
   --theme-icon-sun: var(--color-text-primary);
   --theme-icon-moon-brand: var(--color-disabled);
   --theme-icon-moon: var(--color-disabled);
+  --color-user-border: #{palette.$slate-700};
+  --color-user-background: #{palette.$slate-500};
 }

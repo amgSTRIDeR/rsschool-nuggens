@@ -1,1 +1,6 @@
 @use 'modern-normalize/modern-normalize.css';
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
