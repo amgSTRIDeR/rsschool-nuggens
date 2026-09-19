@@ -17,4 +17,9 @@
   --theme-icon-moon: var(--color-disabled);
   --color-user-border: #{palette.$slate-700};
   --color-user-background: #{palette.$slate-500};
+  --color-sidebar-background: #{palette.$white};
+  --color-border: #{palette.$slate-200};
+  --color-sidebar-active: #{palette.$cream-150};
+  --color-sidebar-hover: #{palette.$cream-300};
+  --color-sidebar-hover-active: #{palette.$cream-400};
 }
