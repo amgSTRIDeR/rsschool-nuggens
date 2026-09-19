@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 59" fill="none">
-  <rect x="12.5" y="6.5" width="36.5" height="45" rx="7.8" ry="7.8" stroke="currentColor" stroke-width="4.8"/>
-  <path d="M24 19.8 H 38" stroke="var(--brand-color, #DEBA6F)" stroke-width="4.8" stroke-linecap="round"/>
-  <path d="M24 30.1 H 37" stroke="var(--brand-color, #DEBA6F)" stroke-width="4.8" stroke-linecap="round"/>
-  <path d="M24 40.2 H 32.2" stroke="var(--brand-color, #DEBA6F)" stroke-width="4.8" stroke-linecap="round"/>
-</svg>

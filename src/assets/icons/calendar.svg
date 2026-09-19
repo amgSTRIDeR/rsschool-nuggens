@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69 68" fill="none">
-  <rect x="14.5" y="16.0" width="43.0" height="42.5" rx="8.8" ry="8.8" stroke="currentColor" stroke-width="4.8"/>
-  <path d="M 17.2 30.0 H 54.8" stroke="currentColor" stroke-width="4.8" stroke-linecap="round"/>
-  <path d="M 27.0 10.8 V 20.3" stroke="currentColor" stroke-width="4.8" stroke-linecap="round"/>
-  <path d="M 44.1 10.8 V 20.3" stroke="currentColor" stroke-width="4.8" stroke-linecap="round"/>
-  <rect x="39.0" y="37.5" width="11.2" height="11.2" rx="2.6" fill="var(--brand-color, #DEBA6F)"/>
-</svg>
