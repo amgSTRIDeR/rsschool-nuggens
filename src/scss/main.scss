@@ -1,22 +1,7 @@
-@use 'modern-normalize/modern-normalize.css';
+@use 'reset';
 @use './theme-light';
 @use './theme-dark';
+@use 'base';
+@use 'layout';
 
-@font-face {
-  font-family: 'Inter';
-  src: url('../assets/fonts/Inter-VariableFont_opsz,wght.ttf')
-  format('truetype');
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-}
-
-html {
-  font-family:
-          'Inter',
-          system-ui,
-          -apple-system,
-          BlinkMacSystemFont,
-          'Segoe UI',
-          sans-serif;
-}
+@use './components/header';
