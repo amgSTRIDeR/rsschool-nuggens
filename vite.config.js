@@ -1,20 +1,9 @@
 import { defineConfig } from 'vite';
 import handlebars from 'vite-plugin-handlebars';
 import { resolve } from 'node:path';
+import { pageData } from './src/data/page-data.js';
 
 const root = import.meta.dirname;
-
-const pageData = {
-  '/index.html': {
-    page: 'home',
-    title: 'Nuggens — Home',
-  },
-
-  '/catalog.html': {
-    page: 'catalog',
-    title: 'Nuggens — Product catalog',
-  },
-};
 
 export default defineConfig({
   appType: 'mpa',
