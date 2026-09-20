@@ -1,19 +1,24 @@
 export function initThemeSwitcher() {
-  const themeSwitcher = document.querySelector('.switch-input');
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme) {
-    savedTheme === 'light' ? (themeSwitcher.checked = false) : (themeSwitcher.checked = true);
-    document.documentElement.dataset.theme = savedTheme;
-  }
+  const themeSwitchers = document.querySelectorAll('.switch-input');
+  if (!themeSwitchers.length) return;
+  const savedTheme = localStorage.getItem('theme') ?? 'light';
 
-  themeSwitcher.addEventListener('change', () => {
-    let currentTheme;
-    if (themeSwitcher.checked) {
-      currentTheme = 'dark';
-    } else {
-      currentTheme = 'light';
-    }
-    document.documentElement.dataset.theme = currentTheme;
-    localStorage.setItem('theme', currentTheme);
+  applyTheme(savedTheme);
+
+  themeSwitchers.forEach((themeSwitcher) => {
+    themeSwitcher.addEventListener('change', () => {
+      const currentTheme = themeSwitcher.checked ? 'dark' : 'light';
+
+      applyTheme(currentTheme);
+      localStorage.setItem('theme', currentTheme);
+    });
   });
+
+  function applyTheme(theme) {
+    document.documentElement.dataset.theme = theme;
+
+    themeSwitchers.forEach((themeSwitcher) => {
+      themeSwitcher.checked = theme === 'dark';
+    });
+  }
 }
