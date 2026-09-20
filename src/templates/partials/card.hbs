@@ -1,0 +1,24 @@
+<div class="card">
+    <img class="card__image" src="src/assets/{{image}}" alt="">
+    <h2 class="card__title">{{title}}</h2>
+    <div class="card__info">
+        <span class="card__calories">{{calories}} kcal</span>
+        <span>&middot;</span>
+        <span class="card__amount">{{amount}} {{unit}}</span>
+    </div>
+    <div class="card__counter">
+        <svg class="card__counter-button card__counter-button--decrease">
+            <use href='src/assets/icons/sprite.svg#icon-minus'></use>
+        </svg>
+        <span class="card__counter-value">{{count}} {{unit}}</span>
+        <svg class="card__counter-button card__counter-button--increase">
+            <use href='src/assets/icons/sprite.svg#icon-plus'></use>
+        </svg>
+    </div>
+    <div class="card__footer">
+        {{> button text = "Edit" format = 'bordered' size
+        = 'medium' }}
+        {{> button text = "Add" format = 'filled' size
+        = 'medium' }}
+    </div>
+</div>

@@ -42,4 +42,10 @@
   --color-button-active: #{palette.$blue-600};
   --color-button-border-active: #{palette.$slate-500};
   --color-button-filled-active: var(--color-brand-reversed);
+
+  --color-card-background: #{palette.$navy-700};
+  --color-card-stroke: #{palette.$slate-700};
+  --color-card-info-text: #{palette.$slate-700};
+  --color-card-counter-background: #{palette.$navy-600};
+  --color-card-counter-border: #{palette.$slate-700};
 }

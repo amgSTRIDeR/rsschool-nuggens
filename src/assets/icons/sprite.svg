@@ -118,17 +118,54 @@
               fill="var(--color-brand, #DEBA6F)"/>
     </symbol>
 
-    <symbol id="icon-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 56" fill="none">
-        <circle cx="30" cy="26" r="20" stroke="currentColor" stroke-width="4"/>
-        <path d="M21.5 25.5H37.5" stroke="var(--color-brand, #DEBA6F)" stroke-width="4" stroke-linecap="round"/>
-        <path d="M29.5 17.5V33.5" stroke="var(--color-brand, #DEBA6F)" stroke-width="4" stroke-linecap="round"/>
+    <symbol
+            id="icon-plus"
+            viewBox="0 0 56 56"
+            fill="none"
+    >
+        <circle
+                cx="28"
+                cy="28"
+                r="21"
+                stroke="currentColor"
+                stroke-width="4"
+        />
+
+        <path
+                d="M20 28H36"
+                stroke="var(--color-brand, #deba6f)"
+                stroke-width="4"
+                stroke-linecap="round"
+        />
+
+        <path
+                d="M28 20V36"
+                stroke="var(--color-brand, #deba6f)"
+                stroke-width="4"
+                stroke-linecap="round"
+        />
     </symbol>
 
-    <symbol id="icon-minus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 57" fill="none">
-        <circle cx="29" cy="28.5" r="22.0" stroke="currentColor" stroke-width="4.8"/>
-        <path d="M21.5 28.5H36.5" stroke="var(--color-brand, #DEBA6F)" stroke-width="4.8" stroke-linecap="round"/>
-    </symbol>
+    <symbol
+            id="icon-minus"
+            viewBox="0 0 56 56"
+            fill="none"
+    >
+        <circle
+                cx="28"
+                cy="28"
+                r="21"
+                stroke="currentColor"
+                stroke-width="4"
+        />
 
+        <path
+                d="M20 28H36"
+                stroke="var(--color-brand, #deba6f)"
+                stroke-width="4"
+                stroke-linecap="round"
+        />
+    </symbol>
     <symbol id="icon-home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 62" fill="none">
         <path d="M 14 29.5 L 31 14.5 L 48 29.5 V 44.5 C 48 46.4 46.4 48 44.5 48 H 17.5 C 15.6 48 14 46.4 14 44.5 Z"
               stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
