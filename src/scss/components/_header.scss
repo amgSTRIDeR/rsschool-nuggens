@@ -29,7 +29,7 @@
     color: var(--color-text-primary);
     cursor: pointer;
 
-    @media (min-width: 769px) {
+    @media (width > 769px) {
       display: none;
     }
 
