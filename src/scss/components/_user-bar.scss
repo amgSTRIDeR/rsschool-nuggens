@@ -4,8 +4,7 @@
   align-items: center;
   gap: 15px;
 
-  transition:
-          color 180ms ease;
+  transition: color 180ms ease;
 
   &:hover {
     color: var(--color-brand-hover);
@@ -29,7 +28,7 @@
     border-radius: 50%;
     border: 2px solid var(--color-user-border);
     background-color: var(--color-user-background);
-    background-image: url("../../assets/images/tilkayo.png");
+    background-image: url('../../assets/images/tilkayo.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

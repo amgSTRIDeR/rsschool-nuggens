@@ -17,4 +17,29 @@
   --color-user-background: #{palette.$slate-500};
   --color-sidebar-background: #{palette.$navy-700};
   --color-sidebar-active: #{palette.$brown-400};
+
+  --color-brand-dark-2: #{palette.$gold-600};
+
+  --color-button-text: var(--color-text-primary);
+  --color-button-text-filled: var(--color-button-text);
+  --color-button-stroke: #{palette.$slate-700};
+  --color-button-border: var(--color-brand-dark-2);
+  --color-button-background: #{palette.$navy-700};
+  --color-button-filled: var(--color-brand-dark-2);
+
+  --color-button-danger: #{palette.$red-500};
+  --color-button-danger-hover: #{palette.$red-600};
+  --color-button-danger-active: #{palette.$red-100};
+
+  --color-button-interactive: #{palette.$gold-600};
+  --color-button-interactive-background: #{palette.$brown-400};
+  --color-button-interactive-background-hover: #{palette.$brown-500};
+  --color-button-interactive-background-active: #{palette.$brown-700};
+
+  --color-button-hover: #{palette.$navy-500};
+  --color-button-border-hover: #{palette.$slate-300};
+  --color-button-filled-hover: var(--color-brand-hover);
+  --color-button-active: #{palette.$blue-600};
+  --color-button-border-active: #{palette.$slate-500};
+  --color-button-filled-active: var(--color-brand-reversed);
 }

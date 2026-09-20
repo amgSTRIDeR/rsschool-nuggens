@@ -22,4 +22,17 @@
   --color-sidebar-active: #{palette.$cream-150};
   --color-sidebar-hover: #{palette.$cream-300};
   --color-sidebar-hover-active: #{palette.$cream-400};
+
+  --color-button-text: var(--color-text-primary);
+  --color-button-text-filled: #{palette.$surface-light};
+  --color-button-stroke: var(--color-border);
+  --color-button-border: var(--color-brand);
+  --color-button-background: #{palette.$gray-50};
+  --color-button-filled: var(--color-brand);
+  --color-button-hover: #{palette.$slate-200};
+  --color-button-border-hover: #{palette.$slate-300};
+  --color-button-filled-hover: var(--color-brand-hover);
+  --color-button-active: #{palette.$slate-300};
+  --color-button-border-active: #{palette.$slate-500};
+  --color-button-filled-active: var(--color-brand-reversed);
 }

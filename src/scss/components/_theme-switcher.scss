@@ -49,18 +49,18 @@
     cursor: pointer;
     background-color: var(--color-background-reversed);
 
-    transition: .4s;
+    transition: 0.4s;
 
     &:before {
       position: absolute;
-      content: "";
+      content: '';
       height: 22px;
       width: 22px;
       left: 5px;
       bottom: 5px;
       background-color: var(--color-brand);
-      -webkit-transition: .4s;
-      transition: .4s;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
     }
 
     &.round {
