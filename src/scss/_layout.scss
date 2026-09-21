@@ -5,9 +5,17 @@
   padding-inline: 24px;
 }
 
-.container {
+.app-layout {
   width: 100%;
   max-width: 1280px;
   margin-inline: auto;
-  padding-inline: 24px;
+  display: flex;
+  justify-content: stretch;
+  align-items: flex-start;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.page--home {
+  width: 100%;
 }

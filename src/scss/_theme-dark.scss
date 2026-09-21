@@ -1,6 +1,10 @@
 @use './palette' as palette;
 
 [data-theme='dark'] {
+  --color-header-background: #{palette.$navy-700};
+
+  --color-border-sidebar: #{palette.$gray-900};
+
   --color-brand: #{palette.$orange-500};
   --color-brand-reversed: #{palette.$orange-400};
   --color-background: #{palette.$navy-850};
@@ -48,4 +52,9 @@
   --color-card-info-text: #{palette.$slate-700};
   --color-card-counter-background: #{palette.$navy-600};
   --color-card-counter-border: #{palette.$slate-700};
+
+  --color-hero-background-1: #0B1422;
+  --color-hero-background-2: #101B2D;
+  --color-hero-background-3: #162238;
+  --color-hero-browse-button: var(--color-text-primary);
 }

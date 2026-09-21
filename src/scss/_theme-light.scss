@@ -2,6 +2,10 @@
 
 :root,
 [data-theme='light'] {
+  --color-header-background: #{palette.$white};
+
+  --color-border-sidebar: #{palette.$slate-200};
+
   --color-brand: #{palette.$orange-400};
   --color-brand-reversed: #{palette.$orange-500};
   --color-brand-hover: #{palette.$orange-600};
@@ -41,4 +45,10 @@
   --color-card-info-text: #{palette.$slate-700};
   --color-card-counter-background: #{palette.$gray-50};
   --color-card-counter-border: #{palette.$slate-200};
+
+  --color-hero-background-1: #fffdf8;
+  --color-hero-background-2: #fff9ec;
+  --color-hero-background-3: #fff8e9;
+  --color-hero-browse-button: var(--color-brand);
+
 }

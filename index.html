@@ -10,22 +10,15 @@
 
   <body data-page="{{ page }}">
     {{> header }}
-
-<!--    {{> button text = "Click me" icon = "food" format = 'filled' className = 'b1' size-->
-<!--    = 'large' }} {{> button text = "Click me" icon = "drinks" format = 'bordered' className = 'b2'-->
-<!--    size = 'medium' }} {{> button text = "Click me" format = 'danger' className = 'b3' isRound =-->
-<!--    true size = 'large' }} {{> button text = "Click me" format = 'danger' className = 'b4' isRound =-->
-<!--    true size = 'medium' }} {{> button text = "Click me" format = 'interactive' className = 'b3'-->
-<!--    isRound = true size = 'large' }} {{> button text = "Click me" icon='food' format = 'interactive' className =-->
-<!--    'active' isRound = true size = 'medium' }}-->
-
     <div class="app-layout">
       {{> sidebar }}
 
       <main class="page page--home">
+        {{> hero }}
         <h1 class="visually-hidden">Nuggens</h1>
       </main>
     </div>
+
 
     {{> footer }} {{> bottom-nav }}
 
