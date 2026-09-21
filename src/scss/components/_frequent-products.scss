@@ -1,0 +1,63 @@
+.frequent-products {
+  width: 100%;
+  padding: 12px 18px;
+  height: min-content;
+  background: var(--color-header-background);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  align-items: flex-start;
+  justify-content: center;
+
+  .frequent-products__title {
+      margin: 0;
+      padding: 0;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .frequent-products__carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .carousel__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    .carousel__button-icon {
+      height: 40px;
+      width: 40px;
+      color: var(--color-arrow);
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: var(--color-arrow-hover);
+      }
+
+      &:active {
+        color: var(--color-arrow-active);
+      }
+    }
+  }
+
+  .frequent-products__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    overflow-x: hidden;
+    gap: 8px;
+  }
+}

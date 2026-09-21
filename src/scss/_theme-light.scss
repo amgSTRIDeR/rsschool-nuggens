@@ -51,4 +51,8 @@
   --color-hero-background-3: #fff8e9;
   --color-hero-browse-button: var(--color-brand);
 
+  --color-arrow: #{palette.$slate-200};
+  --color-arrow-hover: #{palette.$slate-300};
+  --color-arrow-active: #{palette.$slate-700};
+
 }

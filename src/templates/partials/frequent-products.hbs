@@ -1,0 +1,29 @@
+<section class="frequent-products">
+    <h2 class="frequent-products__title">Frequent products</h2>
+    <div class="frequent-products__carousel">
+        <button class="carousel__button carousel__button-left">
+            <svg class="carousel__button-icon">
+                <use href='src/assets/icons/sprite.svg#icon-previous'></use>
+            </svg>
+        </button>
+        <div class="frequent-products__list">
+            {{#each products}}
+                {{> card
+                        title=name
+                        image=image
+                        calories=nutrition.calories
+                        unit = serving.unit
+                        amount=serving.amount
+                        count=serving.amount
+                        classList='slide'
+                        id=id
+                }}
+            {{/each}}
+        </div>
+        <button class="carousel__button carousel__button-right">
+            <svg class="carousel__button-icon">
+                <use href='src/assets/icons/sprite.svg#icon-next'></use>
+            </svg>
+        </button>
+    </div>
+</section>
