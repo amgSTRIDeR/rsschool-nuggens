@@ -12,6 +12,10 @@
   justify-content: center;
   margin: 20px;
 
+  button.active {
+    background-color: var(--color-brand-reversed);
+  }
+
   .catalog__buttons {
     display: flex;
     justify-content: flex-start;
