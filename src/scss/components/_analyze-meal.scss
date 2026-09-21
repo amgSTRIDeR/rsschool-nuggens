@@ -12,8 +12,8 @@
   .analyze-meal-title {
     font-size: 25px;
     font-weight: bold;
-      margin: 0;
-      padding: 0;
+    margin: 0;
+    padding: 0;
   }
 
   .analyze-meal-text {
@@ -27,7 +27,7 @@
     align-items: center;
     gap: 20px;
 
-    @media(width < 900px) {
+    @media (width < 900px) {
       flex-direction: column;
 
       & .analyze-meal__button-icon {
@@ -51,8 +51,8 @@
 
   .analyze-meal-photos {
     list-style: none;
-      margin: 0;
-      padding: 0;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -99,8 +99,8 @@
   }
 
   .analyze-meal-photo-add {
-      width: 120px;
-      height: 92px;
+    width: 120px;
+    height: 92px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,8 +122,8 @@
   }
 
   .photo-add-icon {
-      width: 40px;
-      height: 40px;
+    width: 40px;
+    height: 40px;
   }
 
   .photo-add-text {
@@ -181,8 +181,8 @@
   .output-header {
     font-size: 16px;
     font-weight: bold;
-      padding: 0;
-      margin: 0;
+    padding: 0;
+    margin: 0;
   }
 
   .output-content {
@@ -217,15 +217,15 @@
 
   .name,
   .info {
-      padding: 0;
-      margin: 0;
+    padding: 0;
+    margin: 0;
     font-size: 15px;
   }
 
   .note {
-      margin: 8px 0 5px 0;
+    margin: 8px 0 5px 0;
     font-size: 13px;
- color:  var(--color-card-info-text);
+    color: var(--color-card-info-text);
   }
 
   .info {

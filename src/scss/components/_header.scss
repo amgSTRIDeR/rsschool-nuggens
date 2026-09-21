@@ -44,9 +44,9 @@
         border-radius: 999px;
 
         transition:
-                transform 250ms ease,
-                opacity 200ms ease,
-                background-color 200ms ease;
+          transform 250ms ease,
+          opacity 200ms ease,
+          background-color 200ms ease;
       }
 
       &:hover {
@@ -101,8 +101,8 @@
         height: 68px;
         color: var(--color-logo);
         transition:
-                color 0.2s ease,
-                transform 0.15s ease;
+          color 0.2s ease,
+          transform 0.15s ease;
       }
 
       &--sun,

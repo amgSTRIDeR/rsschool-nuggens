@@ -31,7 +31,7 @@ body {
   padding: 0 20px;
   row-gap: 20px;
 
-  @media(width >= 380px) and (width < 600px) {
+  @media (width >= 380px) and (width < 600px) {
     padding: 0 calc(6.818vw - 20.91px);
   }
 

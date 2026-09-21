@@ -44,8 +44,8 @@
     justify-content: center;
     border: 1px solid #f2e7d3;
     background: linear-gradient(
-            var(--color-hero-background-1) 0%,
-            var(--color-hero-background-3) 100%
+      var(--color-hero-background-1) 0%,
+      var(--color-hero-background-3) 100%
     );
   }
 
@@ -85,7 +85,7 @@
       & .macro__title {
         font-size: 9px;
         font-weight: normal;
-        color: #6E7D9B;
+        color: #6e7d9b;
       }
 
       &:nth-child(1),
@@ -148,9 +148,9 @@
     color: transparent;
     --color-brand: var(--color-text-primary);
 
-    transition: color 0.2s, transform 0.2s;
-
-
+    transition:
+      color 0.2s,
+      transform 0.2s;
 
     &:hover {
       color: var(--color-card-counter-border);

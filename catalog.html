@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- prettier-ignore -->
+    <meta charset="UTF-8">
+    <!-- prettier-ignore -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{> favicon }}
 
-    <title>{{ title }}</title>
+    <title>Nuggens</title>
   </head>
 
   <body data-page="{{ page }}">
@@ -15,9 +16,7 @@
     <div class="app-layout">
       {{> sidebar }}
 
-      <main class="page page--catalog">
-        {{> catalog }}
-      </main>
+      <main class="page page--catalog">{{> catalog }}</main>
     </div>
 
     {{> footer }}

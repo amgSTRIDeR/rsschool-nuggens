@@ -4,14 +4,14 @@
   align-items: center;
   gap: 20px;
   width: 100%;
-    height: 180px;
+  height: 180px;
   border: 1px solid #f2dbae;
   border-radius: 10px;
   background: linear-gradient(
-          90deg,
-          var(--color-hero-background-1) 0%,
-          var(--color-hero-background-2) 62%,
-          var(--color-hero-background-3) 100%
+    90deg,
+    var(--color-hero-background-1) 0%,
+    var(--color-hero-background-2) 62%,
+    var(--color-hero-background-3) 100%
   );
   padding: 17px 28px 17px 28px;
   margin-top: 20px;
@@ -48,9 +48,9 @@
       }
 
       .hero__button-browse {
-          .button__text {
-            color: var(--color-hero-browse-button);
-          }
+        .button__text {
+          color: var(--color-hero-browse-button);
+        }
 
         width: 137px;
       }
@@ -67,18 +67,18 @@
   .hero-summary {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-      width: 228px;
-      height: 142px;
+    width: 228px;
+    height: 142px;
 
     background: linear-gradient(
-            var(--color-hero-background-1) 0%,
-            var(--color-hero-background-3) 100%
+      var(--color-hero-background-1) 0%,
+      var(--color-hero-background-3) 100%
     );
     border-radius: 16px;
     border: 1px solid #f2e7d3;
     padding: 5px 20px;
 
-    @media(width < 1000px) {
+    @media (width < 1000px) {
       display: none;
     }
 
@@ -111,7 +111,7 @@
       & .macro__title {
         font-size: 9px;
         font-weight: normal;
-        color: #6E7D9B;
+        color: #6e7d9b;
       }
 
       &:nth-child(2),
