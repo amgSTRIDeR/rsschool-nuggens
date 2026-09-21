@@ -1,133 +1,135 @@
-.header__inner {
-  height: 68px;
-  display: flex;
-  justify-content: space-between;
+.header {
   background-color: var(--color-header-background);
-
-  .header__left,
-  .header__right {
+  .header__inner {
+    height: 68px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 50px;
-  }
 
-  .menu-button {
-    width: 24px;
-    height: 24px;
-
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-
-    padding: 0;
-    margin: 0;
-
-    border: 0;
-    background: none;
-
-    color: var(--color-text-primary);
-    cursor: pointer;
-
-    @media (width > 769px) {
-      display: none;
+    .header__left,
+    .header__right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
     }
 
-    &__line {
-      display: block;
-      width: 20px;
-      height: 2px;
+    .menu-button {
+      width: 24px;
+      height: 24px;
 
-      background-color: currentColor;
-      border-radius: 999px;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
 
-      transition:
-        transform 250ms ease,
-        opacity 200ms ease,
-        background-color 200ms ease;
-    }
+      padding: 0;
+      margin: 0;
 
-    &:hover {
-      color: var(--color-brand-hover);
-    }
+      border: 0;
+      background: none;
 
-    &.is-open {
-      color: var(--color-brand);
+      color: var(--color-text-primary);
+      cursor: pointer;
 
-      .menu-button__line {
-        &:nth-child(1) {
-          transform: translateY(7px) rotate(45deg);
-        }
+      @media (width > 769px) {
+        display: none;
+      }
 
-        &:nth-child(2) {
-          opacity: 0;
-        }
+      &__line {
+        display: block;
+        width: 20px;
+        height: 2px;
 
-        &:nth-child(3) {
-          transform: translateY(-7px) rotate(-45deg);
-        }
+        background-color: currentColor;
+        border-radius: 999px;
+
+        transition:
+                transform 250ms ease,
+                opacity 200ms ease,
+                background-color 200ms ease;
       }
 
       &:hover {
         color: var(--color-brand-hover);
       }
-    }
-  }
 
-  .header__logo {
-    &:hover {
-      .icon--logo {
-        color: var(--color-brand-hover);
-        transform: scale(1.01);
-      }
-    }
-
-    &:active {
-      .icon--logo {
-        transform: scale(0.99);
+      &.is-open {
         color: var(--color-brand);
+
+        .menu-button__line {
+          &:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+          }
+
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          &:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+          }
+        }
+
+        &:hover {
+          color: var(--color-brand-hover);
+        }
       }
     }
-  }
 
-  .icon {
-    color: var(--color-text-primary);
-    transition: color 200ms ease-in-out;
+    .header__logo {
+      &:hover {
+        .icon--logo {
+          color: var(--color-brand-hover);
+          transform: scale(1.01);
+        }
+      }
 
-    &--logo {
-      width: 168px;
-      height: 68px;
-      color: var(--color-logo);
-      transition:
-        color 0.2s ease,
-        transform 0.15s ease;
+      &:active {
+        .icon--logo {
+          transform: scale(0.99);
+          color: var(--color-brand);
+        }
+      }
     }
 
-    &--sun,
-    &--moon {
-      width: 24px;
-      height: 24px;
+    .icon {
+      color: var(--color-text-primary);
+      transition: color 200ms ease-in-out;
+
+      &--logo {
+        width: 168px;
+        height: 68px;
+        color: var(--color-logo);
+        transition:
+                color 0.2s ease,
+                transform 0.15s ease;
+      }
+
+      &--sun,
+      &--moon {
+        width: 24px;
+        height: 24px;
+      }
     }
-  }
 
-  .user-link {
-    display: flex;
-  }
-
-  .toggle-container {
-    display: flex;
-  }
-
-  @media (width < 600px) {
     .user-link {
-      display: none;
+      display: flex;
     }
-  }
 
-  @media (width < 460px) {
     .toggle-container {
-      display: none;
+      display: flex;
+    }
+
+    @media (width < 600px) {
+      .user-link {
+        display: none;
+      }
+    }
+
+    @media (width < 460px) {
+      .toggle-container {
+        display: none;
+      }
     }
   }
 }
