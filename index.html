@@ -17,11 +17,14 @@
         {{> hero }}
         {{> frequent-products }}
         {{> analyze-meal }}
-        {{> daily-summary }}
+        <div class="daily-container">
+          {{> daily-summary }}
+          {{> intake }}
+        </div>
       </main>
     </div>
 
-    {{> footer }} {{> bottom-nav }}
+    {{> footer }}
 
     <script type="module" src="/src/js/pages/home.js"></script>
   </body>

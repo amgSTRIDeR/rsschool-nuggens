@@ -1,0 +1,109 @@
+.intake {
+  padding: 12px 18px;
+  height: min-content;
+  max-width: 430px;
+  width: 100%;
+  background: var(--color-header-background);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  display: flex;
+  gap: 9px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  .intake__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .intake__title {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+  }
+
+  .controls-button,
+  .item__button {
+    cursor: pointer;
+  }
+
+  .item__button {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  .button__icon,
+  .controls-button__icon {
+    height: 30px;
+    width: 30px;
+    color: var(--color-arrow);
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: var(--color-arrow-hover);
+    }
+
+    &:active {
+      color: var(--color-arrow-active);
+    }
+  }
+
+  .intake-items {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+    padding: 2px 5px;
+    background-color: var(--color-button-background);
+  }
+
+
+
+
+  .item__title {
+    margin: 0 0 5px 0;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: start;
+  }
+
+  .item__amount {
+    margin: 0;
+    font-size: 11px;
+    color: var(--color-card-info-text);
+    text-align: start;
+  }
+
+  .item__calories {
+    margin: 0;
+    font-size: 12px;
+    color: var(--color-card-info-text);
+    text-align: end;
+  }
+
+  .item__image {
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    background-color: var(--color-header-background);
+  }
+}

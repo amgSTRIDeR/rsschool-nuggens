@@ -26,4 +26,15 @@
   @media(width >= 380px) and (width < 600px) {
     padding: 0 calc(6.818vw - 20.91px);
   }
+
+  .daily-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+
+    @media (width < 1050px) {
+      flex-direction: column;
+    }
+  }
 }
