@@ -12,6 +12,13 @@
   justify-content: center;
   margin: 20px;
 
+  .catalog__buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+  }
+
   .catalog__title {
     margin: 0;
     padding: 0;

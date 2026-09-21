@@ -1,6 +1,14 @@
 <section class="catalog">
     <h1 class="catalog__title">Product catalog</h1>
     <p class="catalog__text">Browse and manage your food and drinks</p>
+    <div class="catalog__buttons">
+        {{> button text = "Food" format = 'interactive' className='active' size
+        = 'medium' }}
+        {{> button text = "Drinks" format = 'filled'  size
+        = 'medium' }}
+        {{> button text = "Cheat food" format = 'filled'  size
+        = 'medium' }}
+    </div>
     <div class="catalog__pagination">
         <div class="catalog__list">
             {{#each products}}
