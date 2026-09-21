@@ -1,0 +1,61 @@
+@use './palette' as palette;
+
+:root,
+[data-theme='light'] {
+  --color-header-background: #{palette.$white};
+
+  --color-border-sidebar: #{palette.$slate-200};
+
+  --color-brand: #{palette.$orange-400};
+  --color-brand-reversed: #{palette.$orange-500};
+  --color-brand-hover: #{palette.$orange-600};
+  --color-background: #{palette.$gray-100};
+  --color-background-reversed: #{palette.$navy-850};
+  --color-text-primary: #{palette.$navy-500};
+  --color-background-header: #{palette.$white};
+  --color-logo: #{palette.$brown-900};
+  --color-disabled: #{palette.$slate-700};
+  --theme-icon-sun-brand: var(--color-brand);
+  --theme-icon-sun: var(--color-text-primary);
+  --theme-icon-moon-brand: var(--color-disabled);
+  --theme-icon-moon: var(--color-disabled);
+  --color-user-border: #{palette.$slate-700};
+  --color-user-background: #{palette.$slate-500};
+  --color-sidebar-background: #{palette.$white};
+  --color-border: #{palette.$slate-200};
+  --color-sidebar-active: #{palette.$cream-150};
+  --color-sidebar-hover: #{palette.$cream-300};
+  --color-sidebar-hover-active: #{palette.$cream-400};
+
+  --color-button-text: var(--color-text-primary);
+  --color-button-text-filled: #{palette.$surface-light};
+  --color-button-stroke: var(--color-border);
+  --color-button-border: var(--color-brand);
+  --color-button-background: #{palette.$gray-50};
+  --color-button-filled: var(--color-brand);
+  --color-button-hover: #{palette.$slate-200};
+  --color-button-border-hover: #{palette.$slate-300};
+  --color-button-filled-hover: var(--color-brand-hover);
+  --color-button-active: #{palette.$slate-300};
+  --color-button-border-active: #{palette.$slate-500};
+  --color-button-filled-active: var(--color-brand-reversed);
+
+  --color-card-background: #{palette.$white};
+  --color-card-stroke: #{palette.$slate-200};
+  --color-card-info-text: #{palette.$slate-700};
+  --color-card-counter-background: #{palette.$gray-50};
+  --color-card-counter-border: #{palette.$slate-200};
+
+  --color-hero-background-1: #fffdf8;
+  --color-hero-background-2: #fff9ec;
+  --color-hero-background-3: #fff8e9;
+  --color-hero-browse-button: var(--color-brand);
+
+  --color-arrow: #{palette.$slate-200};
+  --color-arrow-hover: #{palette.$slate-300};
+  --color-arrow-active: #{palette.$slate-700};
+
+  --color-remove-button: #{palette.$red-100};
+  --color-remove-button-hover: #{palette.$red-500};
+  --color-remove-button-active: #{palette.$red-600};
+}

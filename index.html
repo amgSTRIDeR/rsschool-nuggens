@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- prettier-ignore -->
+    <meta charset="UTF-8">
+
+    <!-- prettier-ignore -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{> favicon }}
+    <title>Nuggens</title>
+  </head>
+
+  <body data-page="{{ page }}">
+    {{> header }}
+    <div class="app-layout">
+      {{> sidebar }}
+
+      <main class="page page--home">
+        {{> hero }} {{> frequent-products }} {{> analyze-meal }}
+        <div class="daily-container">{{> daily-summary }} {{> intake }}</div>
+      </main>
+    </div>
+
+    {{> footer }}
+
+    <script type="module" src="/src/js/pages/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+.footer {
+  background-color: var(--color-header-background);
+  margin-top: auto;
+
+  .footer__inner {
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 66px;
+
+    @media (width < 800px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+
+    .footer__logo {
+      &:hover {
+        .icon--logo {
+          color: var(--color-brand-hover);
+          transform: scale(1.01);
+        }
+      }
+
+      &:active {
+        .icon--logo {
+          transform: scale(0.99);
+          color: var(--color-brand);
+        }
+      }
+    }
+
+    .icon {
+      color: var(--color-text-primary);
+      transition: color 200ms ease-in-out;
+
+      &--logo {
+        width: 168px;
+        height: 68px;
+        color: var(--color-logo);
+        transition:
+          color 0.2s ease,
+          transform 0.15s ease;
+      }
+
+      &--sun,
+      &--moon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .footer__center {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer__info-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+  }
+
+  .footer__info-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .footer__info-item {
+    font-size: 13px;
+    color: var(--color-card-info-text);
+    transition: color 200ms ease-in-out;
+
+    & a {
+      &:hover {
+        border-bottom: 2px solid var(--color-brand-hover);
+      }
+
+      &:active {
+        border-bottom: 2px solid var(--color-brand-hover);
+        color: var(--color-brand-hover);
+      }
+    }
+  }
+
+  .footer__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    height: 100%;
+  }
+
+  .social-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .social-list__icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer__text {
+    margin: 0;
+    font-size: 16px;
+    color: var(--color-brand);
+  }
+
+  .footer__copyright {
+    margin: 0;
+    color: var(--color-card-info-text);
+  }
+}

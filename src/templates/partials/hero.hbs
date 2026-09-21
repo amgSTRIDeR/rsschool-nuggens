@@ -1,0 +1,42 @@
+<section class="hero">
+    <div class="hero-info">
+        <p class="hero-eyebrow">
+            A healthier you, every day
+        </p>
+
+        <h1 class="hero-title">
+            Track your nutrition.<br>
+            Stay in control.
+        </h1>
+
+        <p class="hero-description">
+            Monitor calories, protein, fats and carbs,
+            manage your products and keep track of your daily progress.
+        </p>
+
+        <div class="hero-footer">
+            {{> button text = "Add food" format = 'filled' className = 'hero__button-add' size
+        = 'medium' }}
+            {{> button text = "Browse products" format = 'bordered' className = 'hero__button-browse' size
+            = 'medium' }}
+        </div>
+    </div>
+    <img class="hero-image" src="src/assets/images/hero.png" alt="" aria-hidden="true">
+    <div class="hero-summary">
+        <div class="hero-summary__calories">
+            635 <span class="calories">kcal</span>
+        </div>
+
+        <div class="hero-summary__macro">
+            <span>35 g</span><span class="macro__title">Protein</span>
+        </div>
+
+        <div class="hero-summary__macro">
+            <span>26 g</span><span class="macro__title">Fats</span>
+        </div>
+
+        <div class="hero-summary__macro">
+            <span>58 g</span><span class="macro__title">Carbs</span>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,133 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: auto;
+  background-color: var(--color-button-background);
+  border: 1px solid var(--color-button-stroke);
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
+
+  .button__text {
+    color: var(--color-button-text);
+  }
+
+  .button__icon {
+    max-width: 22px;
+    max-height: 80%;
+    color: var(--color-button-text);
+  }
+
+  &:hover {
+    background-color: var(--color-button-hover);
+    border: 1px solid var(--color-button-border-hover);
+  }
+
+  &:active {
+    background-color: var(--color-button-active);
+    border: 1px solid var(--color-button-border-active);
+  }
+
+  &--interactive {
+    &.active {
+      background-color: var(--color-button-interactive-background);
+      border: 1px solid var(--color-button-interactive);
+      .button__text {
+        color: var(--color-button-interactive);
+      }
+
+      .button__icon {
+        color: var(--color-button-interactive);
+        --color-brand: var(--color-brand-reversed);
+      }
+
+      &:hover {
+        background-color: var(--color-button-interactive-background-hover);
+      }
+
+      &:active {
+        background-color: var(--color-button-interactive-background-active);
+      }
+    }
+  }
+
+  &--danger {
+    border: 1px solid var(--color-button-danger);
+
+    &:hover {
+      background-color: var(--color-button-background);
+      border: 1px solid var(--color-button-danger-hover);
+      & .button__text {
+        color: var(--color-button-danger-hover);
+      }
+    }
+
+    &:active {
+      background-color: var(--color-button-danger-active);
+      border: 1px solid var(--color-button-danger-hover);
+      & .button__text {
+        color: var(--color-button-danger-hover);
+      }
+    }
+
+    & .button__text {
+      color: var(--color-button-danger);
+    }
+  }
+
+  &--medium {
+    height: 30px;
+    border-radius: 5px;
+
+    &.button--round {
+      border-radius: 25px;
+    }
+  }
+
+  &--large {
+    height: 44px;
+
+    border-radius: 10px;
+
+    &.button--round {
+      border-radius: 25px;
+    }
+  }
+
+  &--filled {
+    border: none;
+    background-color: var(--color-button-filled);
+
+    .button__text {
+      color: var(--color-button-text-filled);
+    }
+
+    .button__icon {
+      color: var(--color-button-text-filled);
+      --color-brand: var(--color-button-text);
+    }
+
+    &:hover {
+      border: none;
+      background-color: var(--color-button-filled-hover);
+    }
+
+    &:active {
+      border: none;
+      background-color: var(--color-button-filled-active);
+    }
+  }
+
+  &--bordered {
+    border: 1px solid var(--color-button-border);
+  }
+
+  &--danger {
+  }
+
+  &--interactive {
+  }
+}

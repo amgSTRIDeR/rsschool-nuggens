@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- prettier-ignore -->
+    <meta charset="UTF-8">
+    <!-- prettier-ignore -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{> favicon }}
+
+    <title>Nuggens</title>
+  </head>
+
+  <body data-page="{{ page }}">
+    {{> header }}
+
+    <div class="app-layout">
+      {{> sidebar }}
+
+      <main class="page page--catalog">{{> catalog }}</main>
+    </div>
+
+    {{> footer }}
+
+    <script type="module" src="/src/js/pages/catalog.js"></script>
+  </body>
+</html>

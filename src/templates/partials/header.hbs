@@ -1,0 +1,21 @@
+<header class='header'>
+  <div class='header__inner container'>
+    <div class='header__left'>
+      <button class='menu-button' type='button' aria-label='Open menu' aria-expanded='false'>
+        <span class='menu-button__line'></span>
+        <span class='menu-button__line'></span>
+        <span class='menu-button__line'></span>
+      </button>
+      <a class='header__logo' href='/' aria-label='Nuggens home'>
+        <svg class='icon icon--logo'>
+          <use href='src/assets/icons/sprite.svg#icon-logo'></use>
+        </svg>
+      </a>
+    </div>
+
+    <div class='header__right'>
+        {{> theme-switcher }}
+        {{> user-bar }}
+    </div>
+  </div>
+</header>

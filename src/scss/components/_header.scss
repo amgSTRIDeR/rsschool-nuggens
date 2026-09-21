@@ -1,0 +1,135 @@
+.header {
+  background-color: var(--color-header-background);
+  .header__inner {
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+
+    .header__left,
+    .header__right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+    }
+
+    .menu-button {
+      width: 24px;
+      height: 24px;
+
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+
+      padding: 0;
+      margin: 0;
+
+      border: 0;
+      background: none;
+
+      color: var(--color-text-primary);
+      cursor: pointer;
+
+      @media (width > 769px) {
+        display: none;
+      }
+
+      &__line {
+        display: block;
+        width: 20px;
+        height: 2px;
+
+        background-color: currentColor;
+        border-radius: 999px;
+
+        transition:
+          transform 250ms ease,
+          opacity 200ms ease,
+          background-color 200ms ease;
+      }
+
+      &:hover {
+        color: var(--color-brand-hover);
+      }
+
+      &.is-open {
+        color: var(--color-brand);
+
+        .menu-button__line {
+          &:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+          }
+
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          &:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+          }
+        }
+
+        &:hover {
+          color: var(--color-brand-hover);
+        }
+      }
+    }
+
+    .header__logo {
+      &:hover {
+        .icon--logo {
+          color: var(--color-brand-hover);
+          transform: scale(1.01);
+        }
+      }
+
+      &:active {
+        .icon--logo {
+          transform: scale(0.99);
+          color: var(--color-brand);
+        }
+      }
+    }
+
+    .icon {
+      color: var(--color-text-primary);
+      transition: color 200ms ease-in-out;
+
+      &--logo {
+        width: 168px;
+        height: 68px;
+        color: var(--color-logo);
+        transition:
+          color 0.2s ease,
+          transform 0.15s ease;
+      }
+
+      &--sun,
+      &--moon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .user-link {
+      display: flex;
+    }
+
+    .toggle-container {
+      display: flex;
+    }
+
+    @media (width < 600px) {
+      .user-link {
+        display: none;
+      }
+    }
+
+    @media (width < 460px) {
+      .toggle-container {
+        display: none;
+      }
+    }
+  }
+}

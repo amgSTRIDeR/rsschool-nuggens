@@ -1,0 +1,68 @@
+@use './palette' as palette;
+
+[data-theme='dark'] {
+  --color-header-background: #{palette.$navy-700};
+
+  --color-border-sidebar: #{palette.$gray-900};
+
+  --color-brand: #{palette.$orange-500};
+  --color-brand-reversed: #{palette.$orange-400};
+  --color-background: #{palette.$navy-850};
+  --color-background-reversed: #{palette.$gray-100};
+  --color-text-primary: #{palette.$surface-light};
+  --color-background-header: #{palette.$navy-700};
+  --color-logo: #{palette.$gold-250};
+  --color-disabled: #{palette.$slate-700};
+  --theme-icon-sun-brand: var(--color-disabled);
+  --theme-icon-sun: var(--color-disabled);
+  --theme-icon-moon-brand: var(--color-brand);
+  --theme-icon-moon: var(--color-text-primary);
+  --color-user-border: #{palette.$slate-700};
+  --color-user-background: #{palette.$slate-500};
+  --color-sidebar-background: #{palette.$navy-700};
+  --color-sidebar-active: #{palette.$brown-400};
+
+  --color-brand-dark-2: #{palette.$gold-600};
+
+  --color-button-text: var(--color-text-primary);
+  --color-button-text-filled: var(--color-button-text);
+  --color-button-stroke: #{palette.$slate-700};
+  --color-button-border: var(--color-brand-dark-2);
+  --color-button-background: #{palette.$navy-700};
+  --color-button-filled: var(--color-brand-dark-2);
+
+  --color-button-danger: #{palette.$red-500};
+  --color-button-danger-hover: #{palette.$red-600};
+  --color-button-danger-active: #{palette.$red-100};
+
+  --color-button-interactive: #{palette.$gold-600};
+  --color-button-interactive-background: #{palette.$brown-400};
+  --color-button-interactive-background-hover: #{palette.$brown-500};
+  --color-button-interactive-background-active: #{palette.$brown-700};
+
+  --color-button-hover: #{palette.$navy-500};
+  --color-button-border-hover: #{palette.$slate-300};
+  --color-button-filled-hover: var(--color-brand-hover);
+  --color-button-active: #{palette.$blue-600};
+  --color-button-border-active: #{palette.$slate-500};
+  --color-button-filled-active: var(--color-brand-reversed);
+
+  --color-card-background: #{palette.$navy-700};
+  --color-card-stroke: #{palette.$slate-700};
+  --color-card-info-text: #{palette.$slate-700};
+  --color-card-counter-background: #{palette.$navy-600};
+  --color-card-counter-border: #{palette.$slate-700};
+
+  --color-hero-background-1: #0b1422;
+  --color-hero-background-2: #101b2d;
+  --color-hero-background-3: #162238;
+  --color-hero-browse-button: var(--color-text-primary);
+
+  --color-arrow: #{palette.$slate-700};
+  --color-arrow-hover: #{palette.$slate-500};
+  --color-arrow-active: #{palette.$blue-600};
+
+  --color-remove-button: #{palette.$red-100};
+  --color-remove-button-hover: #{palette.$red-500};
+  --color-remove-button-active: #{palette.$red-600};
+}

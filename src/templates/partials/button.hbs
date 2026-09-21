@@ -1,0 +1,11 @@
+<button class="button
+{{#if format}}button--{{format}}{{/if}}
+    {{#if className}}{{className}}{{/if}}
+    {{#if isRound}}button--round{{/if}}
+    {{#if size}}button--{{size}}{{/if}}
+">
+    {{#if icon}}<svg class="button__icon">
+        <use href='src/assets/icons/sprite.svg#icon-{{icon}}'></use>
+    </svg>{{/if}}
+<span class="button__text">{{text}}</span>
+</button>
