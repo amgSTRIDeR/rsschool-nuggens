@@ -78,6 +78,9 @@
     border: 1px solid #f2e7d3;
     padding: 5px 20px;
 
+    @media(width < 1000px) {
+      display: none;
+    }
 
     &__calories {
       display: flex;
@@ -124,6 +127,16 @@
           transform: translateY(-50%);
         }
       }
+    }
+  }
+
+  @media (width < 600px) {
+    flex-direction: column-reverse;
+    height: min-content;
+    gap: 0;
+
+    .hero-image {
+      height: 200px;
     }
   }
 }
