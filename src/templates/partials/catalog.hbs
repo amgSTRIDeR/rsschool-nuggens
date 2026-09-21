@@ -1,0 +1,25 @@
+<section class="catalog">
+    <h1 class="catalog__title">Product catalog</h1>
+    <p class="catalog__text">Browse and manage your food and drinks</p>
+    <div class="catalog__pagination">
+        <div class="catalog__list">
+            {{#each products}}
+                {{> card
+                        title=name
+                        image=image
+                        calories=nutrition.calories
+                        unit = serving.unit
+                        amount=serving.amount
+                        count=serving.amount
+                        classList='slide'
+                        id=id
+                }}
+            {{/each}}
+        </div>
+        <button class="pagination__button">
+            <svg class="pagination__button-icon">
+                <use href='src/assets/icons/sprite.svg#icon-next'></use>
+            </svg>
+        </button>
+    </div>
+</section>
