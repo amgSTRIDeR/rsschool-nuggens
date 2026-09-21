@@ -1,0 +1,59 @@
+<section class="analyze-meal">
+    <h2 class="analyze-meal-title">Analyze meal</h2>
+    <p class="analyze-meal-text">Add a photo and describe your meal</p>
+    <div class="analyze-meal-content">
+        <div class="analyze-meal-input-wrapper">
+            <ul class="analyze-meal-photos">
+                <li class="analyze-meal-photo__item">
+                    <img class="analyze-meal-photo__item--photo" src="src/assets/images/analyze/chicken_salad_with_vegetables_1.webp" alt="">
+                    <button class="remove-button">
+                        <svg class="remove-button__icon">
+                            <use href='src/assets/icons/sprite.svg#icon-close'></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="analyze-meal-photo__item">
+                    <img class="analyze-meal-photo__item--photo" src="src/assets/images/analyze/chicken_salad_with_vegetables_2.webp" alt="">
+                    <button class="remove-button">
+                        <svg class="remove-button__icon">
+                            <use href='src/assets/icons/sprite.svg#icon-close'></use>
+                        </svg>
+                    </button>
+                </li>
+
+                <li class="analyze-meal-photo-add">
+                    <svg class="photo-add-icon">
+                        <use href='src/assets/icons/sprite.svg#icon-camera'></use>
+                    </svg>
+                    <span class="photo-add-text">Add photo</span>
+                </li>
+            </ul>
+            <input class="analyze-meal-input" type="text" placeholder="E.g. chicken salad with vegetables..">
+        </div>
+        <button class="analyze-meal-button">
+            <svg class="analyze-meal__button-icon">
+                <use href='src/assets/icons/sprite.svg#icon-next'></use>
+            </svg>
+        </button>
+        <div class="analyze-meal-output">
+            <h3 class="output-header">Suggested product</h3>
+            <div class="output-content">
+                <img class="output-image" src="src/assets/images/analyze/chicken_salad_with_vegetables_3.webp" alt="">
+                <div class="output-description">
+                    <p class="name">Chicken salad</p>
+                    <p class="note">with vegetables</p>
+                    <p class="info">320 kcal &middot; 250 g</p>
+                </div>
+            </div>
+            <div class="output-footer">
+                {{> button text = "Edit" format = 'bordered' size
+                = 'medium' }}
+                {{> button text = "Add to day" format = 'filled' size
+                = 'medium' }}
+                {{> button text = "Save" format = 'bordered' size
+                = 'medium' }}
+            </div>
+        </div>
+
+    </div>
+</section>
