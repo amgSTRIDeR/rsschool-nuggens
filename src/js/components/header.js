@@ -35,4 +35,16 @@ export function initHeader() {
   handleBreakpoint();
 
   mobileMedia.addEventListener('change', handleBreakpoint);
+
+  //TODO
+  const heroButtons = document.querySelectorAll('.hero-footer button');
+  heroButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      const url = '/catalog';
+
+      if (url) {
+        window.location.href = url;
+      }
+    });
+  });
 }
