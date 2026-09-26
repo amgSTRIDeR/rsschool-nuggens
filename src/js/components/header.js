@@ -20,6 +20,19 @@ export function initHeader() {
     }
   });
 
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      if (!sidebar) return;
+      if (menuButton.classList.contains('is-open')) {
+        unBlockPage();
+        sidebar.classList.remove('is-open');
+        menuButton.classList.remove('is-open');
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.setAttribute('aria-label', 'Open menu');
+      }
+    }
+  });
+
   const mobileMedia = window.matchMedia('(width > 769px)');
 
   function handleBreakpoint() {
