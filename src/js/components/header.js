@@ -11,8 +11,10 @@ export function initHeader() {
 
     if (sidebar) {
       if (isOpen) {
+        blockPage();
         sidebar.classList.add('is-open');
       } else {
+        unBlockPage();
         sidebar.classList.remove('is-open');
       }
     }
@@ -22,6 +24,7 @@ export function initHeader() {
 
   function handleBreakpoint() {
     if (menuButton.classList.contains('is-open')) {
+      unBlockPage();
       menuButton.classList.remove('is-open');
       menuButton.setAttribute('aria-expanded', 'false');
       menuButton.setAttribute('aria-label', 'Close menu');
@@ -35,6 +38,16 @@ export function initHeader() {
   handleBreakpoint();
 
   mobileMedia.addEventListener('change', handleBreakpoint);
+
+  function blockPage() {
+    const bodyElement = document.querySelector('body');
+    bodyElement.classList.add('blocked');
+  }
+
+  function unBlockPage() {
+    const bodyElement = document.querySelector('body');
+    bodyElement.classList.remove('blocked');
+  }
 
   //TODO
   const heroButtons = document.querySelectorAll('.hero-footer button');
