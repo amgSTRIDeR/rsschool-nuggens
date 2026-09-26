@@ -1,4 +1,6 @@
 .sidebar {
+  position: relative;
+  z-index: 100;
   width: 170px;
   height: 100%;
   display: flex;
@@ -19,7 +21,7 @@
     transform 300ms ease,
     opacity 300ms ease;
 
-  @media (width <= 769px) {
+  @media (width < 769px) {
     position: fixed;
     top: 68px;
     left: 0;
