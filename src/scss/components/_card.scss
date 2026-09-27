@@ -8,6 +8,18 @@
   border: 2px solid var(--color-card-stroke);
   background-color: var(--color-card-background);
   border-radius: 15px;
+  transition: border 0.4s ease, opacity 0.4s ease;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid var(--color-brand-hover);
+    opacity: 0.9;
+  }
+
+  &:active {
+    border: 2px solid var(--color-brand);
+    opacity: 1;
+  }
 
   .card__title {
     font-size: 14px;

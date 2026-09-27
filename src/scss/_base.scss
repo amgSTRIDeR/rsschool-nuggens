@@ -15,6 +15,10 @@ html {
     'Segoe UI',
     sans-serif;
     scroll-behavior: smooth;
+
+  &:has(dialog[open]) {
+  overflow: hidden;
+}
 }
 
 body {
@@ -26,3 +30,4 @@ body {
     overflow: hidden;
   }
 }
+

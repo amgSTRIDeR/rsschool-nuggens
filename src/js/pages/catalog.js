@@ -55,7 +55,7 @@ function renderProducts(category) {
 
     const cardCaloriesElement = document.createElement('span');
     cardCaloriesElement.classList.add('card__calories');
-    cardCaloriesElement.textContent = product.nutrition.calories + 'kcal';
+    cardCaloriesElement.textContent = product.nutrition.calories + ' kcal';
     cardInfoElement.append(cardCaloriesElement);
 
     const spanElement = document.createElement('span');

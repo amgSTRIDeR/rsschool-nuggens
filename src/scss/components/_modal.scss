@@ -1,0 +1,147 @@
+.card__modal {
+  border: none;
+  background-color: transparent;
+
+  .modal {
+    padding: 12px 18px;
+    height: min-content;
+    background: var(--color-header-background);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    display: flex;
+    gap: 9px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .modal__title {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+  }
+  .modal__header {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .card__image {
+    height: 92px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 12px;
+  }
+
+  .header__content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .header__title {
+    font-size: 14px;
+    margin: 0 0 6px 0;
+  }
+
+  .header__info {
+    color: var(--color-card-info-text);
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .modal-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+    &__macro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      position: relative;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 10px;
+      padding: 10px 12px;
+      border: 1px solid var(--color-card-counter-border);
+      background-color: var(--color-card-counter-background);
+      color: var(--color-text-primary);
+
+      & .macro__title {
+        font-size: 9px;
+        font-weight: normal;
+        color: #6e7d9b;
+      }
+    }
+  }
+
+
+  .modal__quantity,
+  .modal__calories {
+    position: relative;
+  }
+
+  .modal__quantity__input,
+  .modal__calories__input {
+    padding-right: 32px;
+  }
+
+  .number-field__unit {
+    position: absolute;
+    top: 75%;
+    right: 12px;
+    transform: translateY(-50%);
+
+    pointer-events: none;
+  }
+
+  select,
+  input {
+    -webkit-appearance: none;
+    font-family: inherit;
+    appearance: none;
+    text-align: center;
+    outline: none;
+    width: 100%;
+    padding: 2px 0;
+    border-radius: 5px;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-primary);
+
+    &:focus {
+      border: 1px solid var(--color-brand);
+    }
+  }
+
+  .modal__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .modal__buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+  }
+}
