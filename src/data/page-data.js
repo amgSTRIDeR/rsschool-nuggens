@@ -574,7 +574,6 @@ export const products = [
 export const pageData = {
   '/index.html': {
     products,
-    favoriteProducts: products.filter((product) => product.isFavorite),
   },
   '/catalog.html': {
     products,
