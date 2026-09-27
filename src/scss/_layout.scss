@@ -17,7 +17,6 @@ body {
   min-height: calc(100vh - 232px);
   margin-inline: auto;
   display: flex;
-  align-items: stretch;
 }
 
 .page--home,
@@ -25,6 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  align-self: flex-start;
   justify-content: center;
   min-width: 0;
   width: 100%;
