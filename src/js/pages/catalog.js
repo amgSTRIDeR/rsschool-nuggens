@@ -8,6 +8,8 @@ const foodProductsArray = products.filter((product) => product.category === 'foo
 const drinksProductsArray = products.filter((product) => product.category === 'drinks');
 const cheatFoodProductsArray = products.filter((product) => product.category === 'cheat-food');
 
+let controller;
+
 renderProducts('food');
 
 function renderProducts(category) {
@@ -128,6 +130,7 @@ function renderProducts(category) {
     buttonFilledSpan.textContent = 'Add';
     buttonFilledElement.append(buttonFilledSpan);
   });
+  initCatalogExpansion();
 }
 
 const foodCategoryButtonElement = document.querySelector('.button__food');
@@ -154,3 +157,57 @@ cheatFoodCategoryButtonElement.addEventListener('click', () => {
   cheatFoodCategoryButtonElement.classList.add('active');
   renderProducts('cheat-food');
 });
+
+function initCatalogExpansion() {
+  if (controller) {
+    controller?.abort();
+  }
+  controller = new AbortController();
+  const container = document.querySelector('.catalog__list');
+  const button = document.querySelector('.pagination__button');
+
+  if (!container || !button) return;
+
+  const cards = [...container.querySelectorAll('.card')];
+
+  let isExpanded = false;
+
+  const getVisibleCount = () => {
+    return Number(getComputedStyle(container).getPropertyValue('--visible-count').trim());
+  };
+
+  const updateCards = () => {
+    const visibleCount = getVisibleCount();
+
+    cards.forEach((card, index) => {
+      card.hidden = !isExpanded && index >= visibleCount;
+    });
+
+    const allCardsFit = cards.length <= visibleCount;
+
+    if (!allCardsFit) {
+      button.classList.remove('pagination__button--hidden');
+      button.classList.remove(
+        isExpanded ? 'pagination__button--show-more' : 'pagination__button--show-less',
+      );
+      button.classList.add(
+        isExpanded ? 'pagination__button--show-less' : 'pagination__button--show-more',
+      );
+    } else {
+      button.classList.add('pagination__button--hidden');
+    }
+  };
+
+  button.addEventListener(
+    'click',
+    () => {
+      isExpanded = !isExpanded;
+      updateCards();
+    },
+    { signal: controller.signal },
+  );
+
+  window.addEventListener('resize', updateCards, { signal: controller.signal });
+
+  updateCards();
+}

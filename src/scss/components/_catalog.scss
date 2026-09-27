@@ -1,5 +1,4 @@
 .catalog {
-  width: 100%;
   padding: 12px 18px;
   height: min-content;
   background: var(--color-header-background);
@@ -11,6 +10,10 @@
   align-items: flex-start;
   justify-content: center;
   margin: 20px;
+
+  @media(max-width: 380px){
+    margin: 5px;
+  }
 
   button.active {
     background-color: var(--color-brand-reversed);
@@ -51,12 +54,27 @@
     cursor: pointer;
     flex-shrink: 0;
 
+    &--show-more {
+      .pagination__button-icon {
+        transform: rotate(90deg);
+      }
+    }
+
+    &--show-less {
+      .pagination__button-icon {
+        transform: rotate(-90deg);
+      }
+    }
+
+    &--hidden {
+      display: none;
+    }
+
     .pagination__button-icon {
       height: 40px;
       width: 40px;
       color: var(--color-arrow);
       transition: color 0.2s ease-in-out;
-      transform: rotate(90deg);
 
       &:hover {
         color: var(--color-arrow-hover);
@@ -71,13 +89,42 @@
   .catalog__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    max-height: 707px;
+    grid-template-rows: 1fr 1fr;
     width: 100%;
     justify-content: space-between;
+    justify-items: center;
     align-items: center;
     flex: 1;
     min-width: 0;
     overflow-y: hidden;
     gap: 8px;
+
+    & .card[hidden] {
+      display: none;
+    }
+
+    @media (width <= 537px) {
+      --visible-count: 2;
+    }
+
+    @media (width > 537px) {
+      --visible-count: 4;
+    }
+
+    @media (width > 752px) {
+      --visible-count: 6;
+    }
+
+    @media (width > 769px) {
+      --visible-count: 4;
+    }
+
+    @media (width > 904px) {
+      --visible-count: 6;
+    }
+
+    @media (width > 1112px) {
+      --visible-count: 8;
+    }
   }
 }
