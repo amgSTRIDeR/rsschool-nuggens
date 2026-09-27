@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import handlebars from 'vite-plugin-handlebars';
 import { resolve } from 'node:path';
 import { pageData } from './src/data/page-data.js';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 const root = import.meta.dirname;
 
@@ -15,6 +16,14 @@ export default defineConfig({
       context(pagePath) {
         return pageData[pagePath] ?? {};
       },
+    }),
+    viteStaticCopy({
+      targets: [
+        {
+          src: 'src/assets/images',
+          dest: '',
+        },
+      ],
     }),
   ],
 
