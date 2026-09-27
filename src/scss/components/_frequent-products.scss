@@ -35,6 +35,20 @@
     cursor: pointer;
     flex-shrink: 0;
 
+    &.disabled .carousel__button-icon {
+      opacity: 0.3;
+      color: var(--color-arrow);
+      &:hover {
+        opacity: 0.3;
+        color: var(--color-arrow);
+      }
+
+      &:active {
+        opacity: 0.3;
+        color: var(--color-arrow);
+      }
+    }
+
     .carousel__button-icon {
       height: 40px;
       width: 40px;
@@ -51,13 +65,18 @@
     }
   }
 
+  .carousel__wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+
   .frequent-products__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex: 1;
     min-width: 0;
-    overflow-x: hidden;
     gap: 8px;
+    transition: translate 500ms ease;
   }
 }
