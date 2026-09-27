@@ -60,4 +60,9 @@ export function initModal() {
 
     cardModalElement.close();
   });
+
+  const cancelButton = cardModalElement.querySelector('.modal__button-cancel');
+  cancelButton.addEventListener('click', () => {
+    cardModalElement.close();
+  });
 }
