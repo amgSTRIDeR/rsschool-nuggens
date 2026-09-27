@@ -2,29 +2,17 @@
     <h1 class="catalog__title">Product catalog</h1>
     <p class="catalog__text">Browse and manage your food and drinks</p>
     <div class="catalog__buttons">
-        {{> button text = "Food" format = 'filled' className='active' size
+        {{> button text = "Food" format = 'filled' className='active button__food' size
         = 'medium' }}
-        {{> button text = "Drinks" format = 'filled'  size
+        {{> button text = "Drinks" format = 'filled' className='button__drinks'  size
         = 'medium' }}
-        {{> button text = "Cheat food" format = 'filled'  size
+        {{> button text = "Cheat food" format = 'filled' className='button__cheat-food'  size
         = 'medium' }}
     </div>
     <div class="catalog__pagination">
         <div class="catalog__list">
-            {{#each products}}
-                {{> card
-                        title=name
-                        image=image
-                        calories=nutrition.calories
-                        unit = serving.unit
-                        amount=serving.amount
-                        count=serving.amount
-                        classList='slide'
-                        id=id
-                }}
-            {{/each}}
         </div>
-        <button class="pagination__button">
+        <button class="pagination__button pagination__button--show-more">
             <svg class="pagination__button-icon">
                 <use href='src/assets/icons/sprite.svg#icon-next'></use>
             </svg>

@@ -1,0 +1,48 @@
+<dialog class="card__modal">
+    <div class="modal">
+        <h2 class="modal__title">Product details</h2>
+        <div class="modal__header">
+            <img class="card__image" src="src/assets/images/food/avocado.webp" alt="" aria-hidden="true">
+            <div class="header__content">
+                <p class="header__title">product name</p>
+                <div class="header__info">
+                    <span class="header__calories">calories kcal</span>
+                    <span>&middot;</span>
+                    <span class="header__amount">amount unit</span>
+                </div>
+            </div>
+        </div>
+        <span class="modal__notes">Notes</span>
+        <div class="modal-summary">
+            <div class="modal-summary__macro">
+                <span class="protein">35 g</span><span class="macro__title">Protein</span>
+            </div>
+
+            <div class="modal-summary__macro">
+                <span class="fats">26 g</span><span class="macro__title">Fats</span>
+            </div>
+
+            <div class="modal-summary__macro">
+                <span class="carbs">58 g</span><span class="macro__title">Carbs</span>
+            </div>
+        </div>
+        <form class="modal__form" method="dialog">
+            <label class="modal__calories">
+                <span>Calories</span>
+                <input type="number" class="modal__calories__input" value="68" name="calories">
+                <span class="number-field__unit">kcal</span>
+            </label>
+            <label class="modal__quantity">
+                <span>Serving size</span>
+                <input type="number" class="modal__quantity__input" value="100"  name="quantity">
+                <span class="number-field__unit">g</span>
+            </label>
+            <div class="modal__buttons">
+                {{> button text = "Cancel" format = 'bordered' type = 'button' className = 'modal__button-cancel' size
+                = 'medium' }}
+                {{> button text = "Save changes" format = 'filled' type = 'submit' className = 'modal__button-save' size
+                = 'medium' }}
+            </div>
+        </form>
+    </div>
+</dialog>

@@ -6,20 +6,9 @@
                 <use href='src/assets/icons/sprite.svg#icon-previous'></use>
             </svg>
         </button>
-        <div class="frequent-products__list">
-            {{#each products}}
-                {{> card
-                        title=name
-                        image=image
-                        calories=nutrition.calories
-                        unit = serving.unit
-                        amount=serving.amount
-                        count=serving.amount
-                        classList='slide'
-                        id=id
-                }}
-            {{/each}}
-        </div>
+        <div class="carousel__wrapper"><div class="frequent-products__list">
+        </div></div>
+
         <button class="carousel__button carousel__button-right">
             <svg class="carousel__button-icon">
                 <use href='src/assets/icons/sprite.svg#icon-next'></use>

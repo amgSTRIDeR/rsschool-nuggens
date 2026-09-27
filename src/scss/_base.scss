@@ -15,10 +15,19 @@ html {
     'Segoe UI',
     sans-serif;
     scroll-behavior: smooth;
+
+  &:has(dialog[open]) {
+  overflow: hidden;
+}
 }
 
 body {
   margin: 0;
   background: var(--color-background);
   color: var(--color-text-primary);
+
+  &.blocked {
+    overflow: hidden;
+  }
 }
+
